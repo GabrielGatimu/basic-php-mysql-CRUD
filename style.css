@@ -1,0 +1,110 @@
+body {
+    background: #f2f2f2;
+}
+
+.buttons {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.buttons:hover {
+    background-color: green;
+}
+
+/*---------------INSERT NEW RECORD PAGE------------*/
+
+form {
+    padding: 16px;
+}
+
+fieldset {
+    border-radius: 8px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin: 8px;
+    font-size: 16px;
+}
+
+/*-----------Buttons------*/
+#addBtn {
+    background-color: blue;
+    color: white;
+}
+
+#toIndexBtn {
+    background-color: black;
+    color: white;
+}
+
+#addBtn:hover {
+    background-color: green;
+}
+
+#toIndexBtn:hover {
+    background-color: green;
+}
+
+
+/*---------------VIEW RECORDS PAGE------------*/
+/*---------------TABLE------------*/
+#table-container {
+    margin: 10%;
+    width: auto;
+}
+
+table {
+    text-align: center;
+
+}
+
+thead {
+    background: rgb(5, 5, 212);
+    color: white;
+}
+
+th {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+tr:nth-child(even) {
+    background: #7e7d7d;
+}
+
+td {
+    padding: 8px;
+}
+
+/*--------ACTION LINKS-------*/
+#addLink {
+    background-color: black;
+}
+
+#editLink {
+    background-color: green;
+}
+
+#deleteLink {
+    background-color: rgb(253, 5, 5);
+}
+
+/*------HOVER EFFECTS ON ACTION LINKS--------*/
+#addLink:hover {
+    background-color: rgb(5, 5, 212);
+}
+
+#editLink:hover {
+    background-color: rgb(19, 179, 5);
+}
+
+#deleteLink:hover {
+    background-color: rgb(110, 5, 5);
+}
