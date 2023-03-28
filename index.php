@@ -38,7 +38,7 @@
                        
                     while ($row = mysqli_fetch_assoc($result)) { 
                    
-                      $studentId = $row['studentId'];
+                      $studentId = $row['id'];
                       $name = $row['name'];
                       $age = $row['age'];
 

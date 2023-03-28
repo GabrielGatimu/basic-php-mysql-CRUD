@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $age = $_POST['age'];
 
     $sql = "UPDATE Students SET name = '$name', age = $age 
-             WHERE studentId = $studentId";
+             WHERE id = $studentId";
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
@@ -23,14 +23,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 elseif 
 (isset($_GET['editId'])) {
    $studentId =  $_GET['editId'];
-    $sql = "SELECT* FROM Students WHERE studentId =  $studentId";
+    $sql = "SELECT* FROM Students WHERE id = $studentId";
     $result = mysqli_query($conn, $sql);
         
-        if ($result) {
-        
+        if ($result) {        
         
         while ($row = mysqli_fetch_assoc($result)) {
-        $studentId =  $row['studentId'];
+        $studentId =  $row['id'];
         $name = $row['name'];
         $age = $row['age'];
 ?>

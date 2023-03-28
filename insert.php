@@ -41,7 +41,7 @@ mysqli_close($conn);
             <label for="name">Name:</label>
             <input type="text" name="name" required><br>
             <label>Age:</label>
-            <input type="tel" name="age" required><br>
+            <input type="number" name="age" required><br>
 
             <button type="submit" class="buttons" id="addBtn">Insert</button>
             <a type="submit" class="buttons" id="toIndexBtn" href="index.php">Back</a>
